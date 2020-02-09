@@ -2,7 +2,7 @@
 
 In order to run, run the following commands: <br>
 
-"pip install virtualenv" 
+"pip install virtualenv env" 
 
 "env\Scripts\activate"  
 
