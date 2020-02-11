@@ -36,5 +36,5 @@ subprocess.check_output(['scrapy', 'runspider', spider_name, '-t', 'json', '-o',
 
 mas ainda não deu certo. Essa versão vai estar no repo FullStack_MLSC.
 
-![mlsc_api](/images/API.png)
-API: Em Andamento
+![mlsc_api](/images/API_poc.png)
+API: Prova de Conceito
