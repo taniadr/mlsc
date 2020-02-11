@@ -23,6 +23,6 @@ scrapy runspider spider.py -t json -o "output.json"
 Prompt1: Execução 
 
 
-![mlsc_prompt1](/images/prompt1.png)
+![mlsc_prompt1](/images/prompt2.png)
 Prompt2: Resultado após execução 
 
