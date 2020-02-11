@@ -16,4 +16,8 @@ Now, run the command bellow and check the output once its concluded.
 
 O programa pede para você entrar um termo para buscar. Recomendo usar "cookbook" e "cadeado" seguido da tecla enter.
 
-scrapy runspider spider.py -o "output.json"
+scrapy runspider spider.py -t json -o "output.json"
+
+
+![mlsc_prompt1](/images/prompt1.png)
+Format: ![Alt Text](url)
