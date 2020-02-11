@@ -23,6 +23,15 @@ scrapy runspider spider.py -t json -o "output.json"
 Prompt1: Execução 
 
 
-![mlsc_prompt1](/images/prompt2.png)
-Prompt2: Resultado após execução 
+![mlsc_prompt2](/images/prompt2.png)
+Prompt2: Resultado após execução estará no arquivo output.json, no diretório do projeto e do spider.
 
+
+3------------------ NEXT STEPS <br>
+
+Para melhoria deste projeto, intenciona-se a junção da api abaixo com o backend mlsc.
+A integração do Scrapy com o Flask não é trivial, portanto ainda está sendo feito uma análise de viabilidade.
+
+Ele estará em outro repositório, denominado FullStack_MLSC e com código atualizado, não este do lado da imagem.
+
+![mlsc_api](/images/API.png)
