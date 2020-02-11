@@ -14,13 +14,12 @@ from items import AnuncioItem
 class AnuncioLister(CrawlSpider):
     name = 'app'
     item_count = 0
-    m = 5
     main_url = 'https://lista.mercadolivre.com.br'
 
     print 'entre o termo para buscar: '
     product = str(raw_input())
-    #print 'entre o numero de itens para buscar: ',
-    #m = int(raw_input())
+    print 'entre o numero de itens para buscar: '
+    m = int(raw_input())
 
     if product:
     	start_urls = ['%s/%s#D[A:%s]' % (main_url, product, product)]
@@ -45,8 +44,11 @@ class AnuncioLister(CrawlSpider):
         ml_anuncio['state'] = response.xpath('normalize-space(//div[@class="item-conditions"]/text())').extract()
 
         self.item_count += 1
-
-        if self.item_count > 4:
-            raise CloseSpider('fim')
+        if self.m: 
+            if self.item_count > self.m:
+                raise CloseSpider('fim')
+        else:
+            if self.item_count > 10:
+                raise CloseSpider('Fim')
         yield ml_anuncio
 
