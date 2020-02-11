@@ -35,3 +35,4 @@ A integração do Scrapy com o Flask não é trivial, portanto ainda está sendo
 Ele estará em outro repositório, denominado FullStack_MLSC e com código atualizado, não este do lado da imagem.
 
 ![mlsc_api](/images/API.png)
+API: Em Andamento
