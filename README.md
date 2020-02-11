@@ -30,9 +30,11 @@ Prompt2: Resultado após execução estará no arquivo output.json, no diretóri
 3------------------ NEXT STEPS <br>
 
 Para melhoria deste projeto, intenciona-se a junção da api abaixo com o backend mlsc.
-A integração do Scrapy com o Flask não é trivial, portanto ainda está sendo feito uma análise de viabilidade.
+A integração do Scrapy com o Flask não é trivial, e a proposta é usar após um POST, a chamada
 
-Ele estará em outro repositório, denominado FullStack_MLSC e com código atualizado, não este do lado da imagem.
+subprocess.check_output(['scrapy', 'runspider', spider_name, '-t', 'json', '-o', 'output.json']) 
+
+mas ainda não deu certo. Essa versão vai estar no repo FullStack_MLSC.
 
 ![mlsc_api](/images/API.png)
 API: Em Andamento
